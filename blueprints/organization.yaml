@@ -1,0 +1,22 @@
+title: Organization
+@extends:
+    type: article
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      fields:
+        header.organization:
+          type: tab
+          title: ✴ Organization
+          icon: folder
+          text: Enter details for this person
+
+          fields:
+
+            .description:
+              type: textarea
+              label: Notes
+              help: Notes about this plugin's configuration
+              size: medium

@@ -86,13 +86,13 @@ class PhotonOrganizationPlugin extends Plugin
         // styles
         if ($this->config->get('plugins.photon-organization.built_in_css')) {
           $css = 'plugin://photon-organization/assets/organization.css';
-          $assets->addCss($css, 30, false, 'photon' );
+          $assets->addCss($css, 30, false, 'photon-plugin' );
         }
 
         // scripts
         if ($this->config->get('plugins.photon-organization.built_in_js')) {
           $js = 'plugin://photon-organization/assets/organization.js';
-          $assets->addDeferJs($js, 30, false, 'photon' );
+          $assets->addDeferJs($js, 30, false, 'photon-plugin' );
         }
 
 

@@ -1,9 +1,1 @@
-
-{% set excerpt = true %}
-<!-- user/plugins/photon-{{ article.template }}/templates/_articles/{{ article.template }}-excerpt.html.twig -->
-  <article class="{{ article.template }} excerpt" data-url="{{ article.url }}">
-    {% include "_articles/_block/article_figure.html.twig" with { 'article': article } %}
-    {% include "_articles/_block/article_header.html.twig" with { 'article': article } %}
-    {% include "_articles/_block/article_main_excerpt.html.twig" with { 'article': article } %}
-    {% include "_articles/_block/article_footer.html.twig" with { 'article': article } %}
-  </article>
+{% extends '_articles/article-excerpt.html.twig' %}

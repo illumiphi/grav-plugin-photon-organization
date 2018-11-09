@@ -1,6 +1,12 @@
 {% extends 'article.html.twig' %}
+{% set type = "organization" %}
 {% block template %}
 {{ parent() }}
-<!-- user/plugins/photon-organization/templates/organization.html.twig -->
+<!-- user/plugins/photon-{{ type }}/templates/{{ type }}.html.twig -->
 {% endblock %}
-{% block body_template_classes %}{{ parent() }} organization{% endblock body_template_classes %}
+{% block body_template_classes %}{{ parent() }} {{ type }}{% endblock body_template_classes %}
+
+{% block schema %}
+{{ parent() }}
+{% include '_json-ld/' ~ type ~ '.html.twig'  %}
+{% endblock schema %}

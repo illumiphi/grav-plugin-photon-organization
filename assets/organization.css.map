@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": ";AAAA,oDAAoD;AAIpD,uDAAuD;AAEvD,wDAAwD;ACDtD,wBAAO;EACL,MAAM,EAAE,IAAI",
+"mappings": ";AAAA,oDAAoD;AAIpD,uDAAuD;AAEvD,wDAAwD;ACDtD,wBAAO,GACL,MAAM,EAAE,IAAI",
 "sources": ["../scss/organization.scss","../scss/templates/_organization.scss"],
 "names": [],
 "file": "organization.css"

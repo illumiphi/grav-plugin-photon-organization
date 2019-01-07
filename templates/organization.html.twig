@@ -5,8 +5,3 @@
 <!-- user/plugins/photon-{{ type }}/templates/{{ type }}.html.twig -->
 {% endblock %}
 {% block body_template_classes %}{{ parent() }} {{ type }}{% endblock body_template_classes %}
-
-{% block schema %}
-{{ parent() }}
-{% include '_json-ld/' ~ type ~ '.html.twig'  %}
-{% endblock schema %}

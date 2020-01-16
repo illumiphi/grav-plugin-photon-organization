@@ -1,0 +1,22 @@
+PHOTON:
+  organization:
+    _label: Organization Details
+    name: Name
+    email: Email
+    telephone: Telephone
+    url: URL
+
+    location:
+      _label: Location
+      address:
+        _label: Address
+        streetAddress: Street Address
+        postOfficeBoxNumber: PO Box
+        addressLocality: City
+        addressRegion: State
+        postalCode: Zip
+        addressCountry: Country
+      geo:
+        _label: Coords
+        latitude: Lat
+        longitude: Long

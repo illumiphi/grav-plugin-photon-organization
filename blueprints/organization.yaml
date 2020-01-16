@@ -7,16 +7,124 @@ form:
   fields:
     tabs:
       fields:
-        header.organization:
+        header.data.organization:
           type: tab
           title: ✴ Organization
           icon: folder
-          text: Enter details for this person
+          text: Enter details for this organization
 
           fields:
 
-            .description:
-              type: textarea
-              label: Notes
-              help: Notes about this plugin's configuration
+            .@type:
+              type: hidden
+              default:  Organization
+
+            .name:
+              type: text
+              label: PHOTON.organization.name
+              help: Name of the organization
               size: medium
+
+            .email:
+              type: text
+              label: PHOTON.organization.email
+              help: email of organization
+              size: medium
+
+            .telephone:
+              type: text
+              label: PHOTON.organization.telephone
+              help: telephone of organization
+              size: medium
+
+            .url:
+              type: text
+              label: PHOTON.organization.url
+              help: url of organization
+
+            header.data.organization.location:
+              # https://schema.org/PostalAddress
+              type: section
+              title: Location
+              help: organization location
+              info: organization location
+              # icon: map
+              collapsed: false     # Initial state of fieldset (see collapsible option)
+              collapsible: true    # Whether one can expand the fieldset or not
+              fields:
+
+                header.data.organization.location.address:
+                  # https://schema.org/PostalAddress
+                  type: section
+                  title: Address
+                  help: organization location
+                  info: organization location
+                  # icon: map
+                  collapsed: false     # Initial state of fieldset (see collapsible option)
+                  collapsible: true    # Whether one can expand the fieldset or not
+                  fields:
+
+                      header.data.organization.location.address.streetAddress:
+                        type: text
+                        help: The street address. For example: 123 Main St.
+                        label: PHOTON.organization.location.address.streetAddress
+
+                      header.data.organization.location.address.postOfficeBoxNumber:
+                        type: text
+                        help: The PO box. For example: 4444.
+                        label: PHOTON.organization.location.address.postOfficeBoxNumber
+                        size: small
+
+                      header.data.organization.location.address.addressLocality:
+                        type: text
+                        help: The city or locality. For example: Portland.
+                        label: PHOTON.organization.location.address.addressLocality
+                        # default: Waldport
+                        size: medium
+
+                      header.data.organization.location.address.addressRegion:
+                        type: text
+                        help: The state or region. For example: OR.
+                        label: PHOTON.organization.location.address.addressRegion
+                        default: OR
+                        size: small
+
+                      header.data.organization.location.address.postalCode:
+                        type: text
+                        help: The zip or postal code. For example: 97498.
+                        label: PHOTON.organization.location.address.postalCode
+                        # default: 97394
+                        size: small
+
+                      header.data.organization.location.address.addressCountry:
+                        type: text
+                        help: The country or code. For example: US.
+                        label: PHOTON.organization.location.address.addressCountry
+                        default: US
+                        size: small
+
+                header.data.organization.location.geo:
+                  # https://schema.org/GeoCoordinates
+                  # TODO set to number
+                  type: section
+                  title: Geo Coordinates
+                  help: organization location
+                  info: organization location
+                  # icon: map
+                  collapsed: false     # Initial state of fieldset (see collapsible option)
+                  collapsible: true    # Whether one can expand the fieldset or not
+                  fields:
+
+                    header.data.organization.location.geo.latitude:
+                      type: text
+                      help: angular position from equator
+                      label: PHOTON.organization.location.geo.latitude
+                      size: small
+
+                    header.data.organization.location.geo.longitude:
+                      type: text
+                      help: angular position from prime meridian
+                      label: PHOTON.organization.location.geo.longitude
+                      size: small
+
+

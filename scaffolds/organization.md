@@ -1,3 +1,8 @@
+% name: Post
+% folder: date
+% def: author='/about'
+% def: post_date=$(date +%Y-%m-%d)
+% def: collection_name='Articles'
 ---
 title: ${title}
 subtitle: ${subtitle}

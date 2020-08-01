@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+PhotonOrganizationPlugin	photon-organization.php	/^class PhotonOrganizationPlugin extends Plugin$/;"	c
+assets	photon-organization.php	/^      $assets = 		$this->grav['assets'];$/;"	v
+css	photon-organization.php	/^          $css = 'plugin:\/\/photon-organization\/assets\/organization.css';$/;"	v
+getSubscribedEvents	photon-organization.php	/^    public static function getSubscribedEvents()$/;"	f
+js	photon-organization.php	/^          $js = 'plugin:\/\/photon-organization\/assets\/organization.js';$/;"	v
+locator	photon-organization.php	/^        $locator = Grav::instance()['locator'];$/;"	v
+onAdminSave	photon-organization.php	/^    public function onAdminSave(Event $event)$/;"	f
+onGetPageTemplates	photon-organization.php	/^    public function onGetPageTemplates(Event $event)$/;"	f
+onPluginsInitialized	photon-organization.php	/^    public function onPluginsInitialized()$/;"	f
+onTwigSiteVariables	photon-organization.php	/^    public function onTwigSiteVariables()$/;"	f
+onTwigTemplatePaths	photon-organization.php	/^    public function onTwigTemplatePaths()$/;"	f
+page	photon-organization.php	/^      $page = 			$this->grav['page'];$/;"	v
+pages	photon-organization.php	/^      $pages = 			$this->grav['pages'];$/;"	v
+twig	photon-organization.php	/^      $twig = 			$this->grav['twig'];$/;"	v
+types	photon-organization.php	/^        $types = $event->types;$/;"	v

@@ -1,13 +1,14 @@
 % name: Organization
-% def: author='/about'
 % def: post_date=$(date +%Y-%m-%d)
+% def: author='/about'
 % def: collection_name='Articles'
 ---
 title: ${title}
 subtitle: ${subtitle}
+date: ${post_date}
 author: ${author}
-collection:
-    children:
+sets:
+    default:
         name: ${collection_name}
         showCount: true
         showMenu: true

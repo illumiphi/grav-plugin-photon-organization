@@ -80,23 +80,21 @@ class PhotonOrganizationPlugin extends Plugin
       $assets = 		$this->grav['assets'];
 
       // only load the vars if this datatype page
-      if ($page->template() == 'organization')
-      {
+      // if ($page->template() == 'organization')
+      // {
 
         // styles
-        if ($this->config->get('plugins.photon-organization.built_in_css')) {
+        // if ($this->config->get('plugins.photon-organization.built_in_css')) {
           $css = 'plugin://photon-organization/assets/organization.css';
           $assets->addCss($css, 30, false, 'photon-plugin' );
-        }
+        // }
 
         // scripts
-        if ($this->config->get('plugins.photon-organization.built_in_js')) {
+        // if ($this->config->get('plugins.photon-organization.built_in_js')) {
           $js = 'plugin://photon-organization/assets/organization.js';
           $assets->addDeferJs($js, 30, false, 'photon-plugin' );
-        }
-
-
-      }
+        // }
+      // }
     }
 
 }

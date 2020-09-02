@@ -6,9 +6,9 @@
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 PhotonOrganizationPlugin	photon-organization.php	/^class PhotonOrganizationPlugin extends Plugin$/;"	c
 assets	photon-organization.php	/^      $assets = 		$this->grav['assets'];$/;"	v
-css	photon-organization.php	/^          $css = 'plugin:\/\/photon-organization\/assets\/organization.css';$/;"	v
+css	photon-organization.php	/^      $css = 'plugin:\/\/photon-organization\/assets\/organization.css';$/;"	v
 getSubscribedEvents	photon-organization.php	/^    public static function getSubscribedEvents()$/;"	f
-js	photon-organization.php	/^          $js = 'plugin:\/\/photon-organization\/assets\/organization.js';$/;"	v
+js	photon-organization.php	/^        $js = 'plugin:\/\/photon-organization\/assets\/organization.js';$/;"	v
 locator	photon-organization.php	/^        $locator = Grav::instance()['locator'];$/;"	v
 onAdminSave	photon-organization.php	/^    public function onAdminSave(Event $event)$/;"	f
 onGetPageTemplates	photon-organization.php	/^    public function onGetPageTemplates(Event $event)$/;"	f

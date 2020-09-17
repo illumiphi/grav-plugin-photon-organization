@@ -9,29 +9,21 @@ date: ${post_date}
 author: ${author}
 content:
     title: Articles
-    showCount: true
-    showMenu: true
     items: '@self.children'
 members:
     title: Members
-    showCount: true
-    showMenu: true
     items: 
         '@taxonomy.category': ${category}
     filter:
         type: 'person'
 events:
     title: Upcoming Events
-    showCount: true
-    showMenu: true
     items: 
         '@taxonomy.category': ${category}
     filter:
         type: 'event'
 posts:
     title: Recent Posts
-    showCount: true
-    showMenu: true
     items: 
         '@taxonomy.category': ${category}
     filter:

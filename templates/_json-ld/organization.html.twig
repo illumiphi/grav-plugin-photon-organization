@@ -1,37 +1,39 @@
 {% set org = page.header.data.organization %}
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "@id": "{{ org.id }}",
-    "url": "{{ org.url }}",
-    "name": "{{ org.name }}",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ config.url }}{{ url_for(org.logo) }}"
-    },
-    "image": [
-      "{{ config.url }}{{ url_for(org.image) }}"
-     ],
-
-    "location": {
-      "@type": "Place",
-      "name": "{{ org.location.name }}",
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "{{ org.location.geo.latitude }}",
-        "longitude": "{{ org.location.geo.longitude }}"
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "@id": "{{ org.id }}",
+      "url": "{{ org.url }}",
+      "name": "{{ org.name }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ config.url }}{{ url_for(org.logo) }}"
       },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "{{ org.location.address.streetAddress }}",
-        "postOfficeBoxNumber": "{{ org.location.address.postOfficeBoxNumber }}",
-        "addressLocality": "{{ org.location.address.addressLocality }}",
-        "addressRegion": "{{ org.location.address.addressRegion }}",
-        "postalCode": "{{ org.location.address.postalCode }}"
-      }
-    },
-    "telephone": "{{ org.telephone }}",
+      "image": [
+        "{{ config.url }}{{ url_for(org.image) }}"
+       ],
+
+      "location": {
+        "@type": "Place",
+        "name": "{{ org.location.name }}",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "{{ org.location.geo.latitude }}",
+          "longitude": "{{ org.location.geo.longitude }}"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "{{ org.location.address.streetAddress }}",
+          "postOfficeBoxNumber": "{{ org.location.address.postOfficeBoxNumber }}",
+          "addressLocality": "{{ org.location.address.addressLocality }}",
+          "addressRegion": "{{ org.location.address.addressRegion }}",
+          "postalCode": "{{ org.location.address.postalCode }}"
+        }
+      },
+      "telephone": "{{ org.telephone }}",
+    }
+    </script>
     {# {{  var hours = org.hours  -}} #}
     {# "openingHoursSpecification": [ #}
         {# { #}
@@ -77,5 +79,3 @@
           {# "closes":  "{{ hours.Sunday.closes }}" #}
         {# } #}
     {# ] #}
-  }
-  </script>

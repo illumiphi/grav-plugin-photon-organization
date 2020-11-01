@@ -5,7 +5,7 @@
 
 # photon ✴ Organization
 
-## 0.1.0
+## v0.1.0
 > structure, style and logic for content about organizations
 
 ---

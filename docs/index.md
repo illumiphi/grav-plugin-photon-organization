@@ -5,12 +5,12 @@
 
 # photon ✴ Organization
 
-## v0.1.0
-> structure, style and logic for content about organizations
+## 0.1.0
 
 ---
 
-![GitHub release](https://img.shields.io/github/v/tag/photon-platform/grav-theme-photon)
+
+> structure, style and logic for content about organizations
 
 - [configuration](#configuration)
 - [templates](#templates)

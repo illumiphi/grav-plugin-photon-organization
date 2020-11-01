@@ -49,3 +49,97 @@ Note that if you use the admin plugin, a file with your configuration, and named
 blueprints
 └── organization.yaml
 ```
+
+### Organization
+organization.yaml
+extends: article
+fields:
+- header.data.organization
+  - .@type
+  - .name
+  - .email
+  - .telephone
+  - .url
+  - header.data.organization.location
+    - header.data.organization.location.address
+      - header.data.organization.location.address.streetAddress
+      - header.data.organization.location.address.postOfficeBoxNumber
+      - header.data.organization.location.address.addressLocality
+      - header.data.organization.location.address.addressRegion
+      - header.data.organization.location.address.postalCode
+      - header.data.organization.location.address.addressCountry
+    - header.data.organization.location.geo
+      - header.data.organization.location.geo.latitude
+      - header.data.organization.location.geo.longitude
+
+# templates
+
+```sh
+templates
+├── _articles
+│   ├── _block
+│   │   └── organization_collection.html.twig
+│   ├── organization-excerpt.html.twig
+│   └── organization.html.twig
+├── _json-ld
+│   └── organization.html.twig
+└── organization.html.twig
+```
+
+# scaffolds
+
+```sh
+scaffolds
+└── organization.md
+```
+
+# scss
+
+```sh
+scss
+├── articles
+│   └── _organization.scss
+├── templates
+│   └── _organization.scss
+└── organization.scss
+```
+
+# assets
+
+```sh
+assets
+├── organization.css
+├── organization.css.map
+└── organization.js
+```
+
+# languages
+
+```sh
+languages
+└── en.yaml
+```
+
+
+## Installation
+
+- all photon plugins are installed as git submodules. More on that later.
+
+
+
+## Configuration
+
+
+## Usage
+
+Select template type when creating a new page
+
+## Credits
+
+
+## To Do
+
+- [ ] Future plans, if any
+
+
+copyright &copy; 2020

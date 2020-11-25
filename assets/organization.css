@@ -2,6 +2,8 @@
 /* photon ✴ organization Components and Templates */
 /* articles/organization *****************************/
 /* templates/organization *****************************/
-body.organization > main { --test: none; }
+body.organization > main {
+  --test: none;
+}
 
 /*# sourceMappingURL=organization.css.map */

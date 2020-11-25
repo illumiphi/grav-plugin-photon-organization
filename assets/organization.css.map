@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": ";AAAA,oDAAoD;AAIpD,uDAAuD;AAEvD,wDAAwD;ACDtD,wBAAO,GACL,MAAM,EAAE,IAAI",
-"sources": ["../scss/organization.scss","../scss/templates/_organization.scss"],
-"names": [],
-"file": "organization.css"
-}
+{"version":3,"sourceRoot":"","sources":["../scss/organization.scss","../scss/templates/_organization.scss"],"names":[],"mappings":";AAAA;AAIA;AAEA;ACDE;EACE","file":"organization.css"}

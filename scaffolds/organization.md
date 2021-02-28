@@ -30,10 +30,8 @@ posts:
         type: 'post'
 taxonomy:
     category:
-        - ${category}
+        - organization
     tag:
-        - ${tag}
-show_gallery: false
 data:
     organization:
         '@type': Organization
